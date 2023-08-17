@@ -1,5 +1,6 @@
 venv
 QA.egg-info
+.idea
 .eggs
 dataset
 src/results
