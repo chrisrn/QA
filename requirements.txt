@@ -1,0 +1,16 @@
+Flask==2.3.2
+Flask-Cors==4.0.0
+huggingface-hub==0.16.4
+matplotlib==3.7.2
+numpy==1.25.2
+pandas==2.0.3
+Pillow==10.0.0
+scipy==1.11.1
+tensorboard==2.14.0
+tensorboard-data-server==0.7.1
+tokenizers==0.13.3
+torch==2.0.1
+torchsummary==1.5.1
+torchtest==0.5
+torchvision==0.15.2
+transformers==4.31.0

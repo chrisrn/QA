@@ -1,0 +1,6 @@
+venv
+QA.egg-info
+.eggs
+dataset
+src/results
+src/__pycache__

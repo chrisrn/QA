@@ -1,0 +1,45 @@
+{
+  "hyper_parameters": {
+    "batch_size": [12],
+    "epochs": [3],
+    "learning_rate": [5e-5],
+    "optimizer": ["adam"],
+    "grad_clip": [null],
+    "weight_decay": [0.01],
+    "momentum": [0.9],
+    "num_hidden_layers": [3],
+    "num_heads": [2],
+    "dim_encoder": [10],
+    "hidden_trans_dim": [10],
+    "dropout": [0.1],
+    "activation": ["gelu"]
+ },
+  "data": {
+    "data_dir": "../dataset/dev-v2.0.json",
+    "max_seq_length": 512,
+    "num_workers": 0
+ },
+ "callbacks": {
+   "epoch_begin": 0,
+   "plateau_learning_rate": true,
+   "plateau_patience_epochs": 1,
+   "plateau_decay": 0.4,
+   "plateau_min_lr": 0.0000001,
+   "exponential_lr": false,
+   "num_epochs_per_decay": 20,
+   "lr_decay_factor": 0.25,
+   "one_cycle_lr": false,
+   "max_one_cycle_lr": 0.008
+ },
+ "model": {
+   "use_pretrained_bert": false,
+   "fine-tuning-file": "",
+   "exclude_layers" : [],
+   "load_weights_only": true,
+   "train_loaded_weights": true,
+   "cuda_visible_devices": "0",
+   "epochs_per_save": 10,
+   "results_dir": "results",
+   "steps_per_log": 200
+}
+}
